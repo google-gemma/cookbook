@@ -28,7 +28,19 @@ class TextGenerationPipeline {
 
 const stopping_criteria = new InterruptableStoppingCriteria();
 
-let past_key_values_cache = null;
+/**
+ * WebGPU-safe generation defaults.
+ * Conservative values chosen to avoid instability
+ * with quantized ONNX models in browser environments.
+ */
+const SAFE_WEBGPU_GENERATION_CONFIG = {
+  max_new_tokens: 256,
+  do_sample: true,
+  temperature: 0.4,
+  top_p: 0.85,
+  repetition_penalty: 1.1,
+  use_cache: false, // 🔴 Critical for stability
+};
 /**
  * Generate text based on the input messages
  */
@@ -69,21 +81,22 @@ async function generate(messages) {
 
   // Tell the main thread we are starting
   self.postMessage({ status: "start" });
+  
+  const MAX_TOKENS_WARNING_THRESHOLD = 256;
 
-  const { past_key_values, sequences } = await model.generate({
+  if (SAFE_WEBGPU_GENERATION_CONFIG.max_new_tokens > MAX_TOKENS_WARNING_THRESHOLD) {
+    console.warn(
+      "[Gemma WebGPU] Large max_new_tokens may cause unstable output. Consider reducing to ≤256."
+  );
+  }
+
+  const { sequences } = await model.generate({
     ...inputs,
-    past_key_values: past_key_values_cache,
-
-    // Sampling
-    do_sample: false,
-    temperature: 0.3,
-
-    max_new_tokens: 512,
+    ...SAFE_WEBGPU_GENERATION_CONFIG,
     streamer,
     stopping_criteria,
     return_dict_in_generate: true,
   });
-  past_key_values_cache = past_key_values;
 
   const decoded = tokenizer.batch_decode(sequences, {
     skip_special_tokens: true,
@@ -163,7 +176,6 @@ self.addEventListener("message", async (e) => {
       break;
 
     case "reset":
-      past_key_values_cache = null;
       stopping_criteria.reset();
       break;
   }
