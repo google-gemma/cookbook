@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GemmaAppText</string>
+    <string name="action_go">Go</string>
+    <string name="action_stop">Stop</string>
+    <string name="label_prompt">Prompt</string>
+    <string name="prompt_placeholder">Write a poem about the Kraken.</string>
+    <string name="result_placeholder">(Result will appear here)</string>
+</resources>
