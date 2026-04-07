@@ -100,6 +100,7 @@ substitutions:
   _LOCATION: us
   _REPO: container
   
+timeout: 7200s # 120 minutes, to allow for building large models.
 
 options:
   # Automatically make substitutions available as environment variables to scripts.

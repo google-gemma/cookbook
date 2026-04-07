@@ -2,7 +2,7 @@
 # Welcome to the Gemma Cookbook
 This is a collection of guides and examples for [Google Gemma](https://ai.google.dev/gemma/).
 
-> **Disclaimer:** Gemma is a family of developer-focused models built by Google Deepmind. This cookbook is a collection of guides and examples for Google Gemma. Please keep in mind that Gemma is an open model and can hallucinate as you build on examples in this cookbook.
+> **Disclaimer:** Gemma is a family of developer-focused models built by Google DeepMind. This cookbook is a collection of guides and examples for Google Gemma. Please keep in mind that Gemma is an open model and can hallucinate as you build on examples in this cookbook.
 
 ## Get started with the Gemma models
 Gemma is a family of lightweight, generative artificial intelligence (AI) open models, built from the same research and technology used to create the Gemini models. The Gemma model family includes:
@@ -16,6 +16,8 @@ Gemma is a family of lightweight, generative artificial intelligence (AI) open m
     Longer context window and handling text and image input, available in 1B, 4B, 12B, and 27B parameter sizes
   * [Gemma 3n](https://ai.google.dev/gemma/docs/gemma-3n/model_card) \
     Designed for efficient execution on low-resource devices. Handling text, image, video, and audio input, available in E2B and E4B parameter sizes
+  * [Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)\
+    Well-suited for reasoning, agentic workflows, coding, and multimodal understanding, available in E2B, E4B, 26B A4B, and 31B parameter sizes.
 * Gemma variants
   * [CodeGemma](https://ai.google.dev/gemma/docs/codegemma)\
     Fine-tuned for a variety of coding tasks
@@ -39,6 +41,8 @@ Gemma is a family of lightweight, generative artificial intelligence (AI) open m
     Fine-tuned on Gemma 3 4B IT checkpoint for image safety classification
   * [T5Gemma](https://deepmind.google/models/gemma/t5gemma)\
     A collection of encoder-decoder models that provide a strong quality-inference efficiency tradeoff
+  * [TranslateGemma](https://huggingface.co/collections/google/translategemma)\
+    A collection of open model designed to handle translation tasks across 55 languages
   * [TxGemma](https://deepmind.google/models/gemma/txgemma)\
     A collection of open models designed to improve the efficiency of therapeutic development
   * [VaultGemma](https://deepmind.google/models/gemma/vaultgemma)\
