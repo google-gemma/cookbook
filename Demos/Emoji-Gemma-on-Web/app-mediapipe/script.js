@@ -26,11 +26,20 @@ function createEmojiButton(result) {
 // Check for WebGPU availability and displays an error message if it's not available
 function checkWebGPU() {
   if (!navigator.gpu) {
-    statusMessageContainer.innerHTML = `
+    let message = `
       This application requires WebGPU to run the model in your browser.
       Please update your browser to enable WebGPU support, try a different browser (like Chrome or Edge, version 113+), or ensure your GPU drivers are up to date.</br></br>
-      For more details, read the <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status" target="_blank" style="f; color: #286aac">WebGPU Implementation Status</a>.
+      For more details, read the <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status" target="_blank" style="color: #286aac">WebGPU Implementation Status</a>.
     `;
+
+    if (!window.isSecureContext) {
+      message += `
+        <br/><br/>
+        <strong>Note:</strong> WebGPU requires a secure context. Please access this page over HTTPS or from 'localhost'. Accessing a local server via its IP address also requires an HTTPS setup in many instances (e.g. iOS26 Safari).
+      `;
+    }
+
+    statusMessageContainer.innerHTML = message;
     generateBtn.disabled = true;
     return false;
   }
@@ -40,7 +49,7 @@ function checkWebGPU() {
 // Main function to run worker
 async function initializeModelInWorker() {
   console.log("[UI] Initializing application...");
-  
+
   // Create a simulated progress loader that clears once the model loads
   if (!checkWebGPU()) {
     return;
@@ -70,18 +79,18 @@ async function initializeModelInWorker() {
         statusMessageContainer.textContent = `Loading model (100%)`; // Show 100% briefly
         modelReady = true;
         generateBtn.disabled = false;             // Enable the generation button upon model load
-        setTimeout(() => { 
+        setTimeout(() => {
           statusMessageContainer.innerHTML = ``;  // Then empty status message
         }, 500);
         break;
-      
+
       case "result":
         const line = data.trim();
         if (line) {
           createEmojiButton(line);
         }
         break;
-        
+
       case "complete":
         responseComplete();
         break;
@@ -110,7 +119,7 @@ async function initializeModelInWorker() {
 function responseComplete() {
   generateBtn.classList.remove('generating');
   generateBtn.disabled = false;
-  
+
   if (responseOutput.childElementCount === 0) {
     statusMessageContainer.textContent = "No results";
   } else {
