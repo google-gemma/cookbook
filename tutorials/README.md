@@ -22,6 +22,7 @@ Explore Gemma's capabilities across different modalities:
 | [Vision - Video](../docs/capabilities/vision/video.ipynb) | Video understanding and analysis with Gemma 4. |
 | [Audio](../docs/capabilities/audio.ipynb) | Explore audio processing and understanding. |
 | [Thinking](../docs/capabilities/thinking.ipynb) | Reasoning capabilities. |
+| [JAX/TPU Parallelism with Keras 3](Gemma_3_Keras_TPU_Parallelism.ipynb) | True data parallelism on Kaggle TPU v5e-8 mesh using Gemma 3. |
 
 ## Fine-tuning
 
