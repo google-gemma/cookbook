@@ -4,6 +4,7 @@ Notebooks for Gemma models and variants.
 
 | Notebook Name | Description |
 |:--| --- |
+| [Zero_Cloud_Hybrid_RAG_SQLite_FTS5_Gemma.ipynb](Zero_Cloud_Hybrid_RAG_SQLite_FTS5_Gemma.ipynb) | Build a zero-cloud on-device hybrid RAG pipeline combining SQLite FTS5 (BM25) and dense embeddings with Reciprocal Rank Fusion (RRF, k=60) and grounded generation via Gemma 2. |
 | [Agentic_RAG.ipynb](Agentic_RAG.ipynb) | Build an Agentic RAG system that intelligently decides when to call functions, uses a Qdrant based RAG pipeline, and falls back to Google Search. Trace and monitor with OPIK. |
 | [Image_Segmentation.ipynb](Image_Segmentation.ipynb) | Image Segmentation Task with Gemma 4 |
 | [On_Device_AI.ipynb](On_Device_AI.ipynb) | Build a fully on-device RAG pipeline using Lite-RT and Qdrant Edge |
