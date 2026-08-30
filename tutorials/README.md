@@ -5,6 +5,7 @@ Notebooks for Gemma models and variants.
 | Notebook Name | Description |
 |:--| --- |
 | [Agentic_RAG.ipynb](Agentic_RAG.ipynb) | Build an Agentic RAG system that intelligently decides when to call functions, uses a Qdrant based RAG pipeline, and falls back to Google Search. Trace and monitor with OPIK. |
+| [Data_Parallel_Inference_JAX_TPU_v5e8.ipynb](Data_Parallel_Inference_JAX_TPU_v5e8.ipynb) | Data parallel inference with Gemma 3 across a Kaggle TPU v5e-8 mesh, using the Keras 3 JAX backend and the Keras Distribution API. |
 | [Image_Segmentation.ipynb](Image_Segmentation.ipynb) | Image Segmentation Task with Gemma 4 |
 | [On_Device_AI.ipynb](On_Device_AI.ipynb) | Build a fully on-device RAG pipeline using Lite-RT and Qdrant Edge |
 | [RAG_with_EmbeddingGemma.ipynb](RAG_with_EmbeddingGemma.ipynb) | Build simple RAG with [EmbeddingGemma](https://ai.google.dev/gemma/docs/embeddinggemma) |
