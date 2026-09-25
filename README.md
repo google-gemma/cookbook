@@ -26,6 +26,8 @@ Gemma is a family of lightweight, generative artificial intelligence (AI) open m
     Designed for efficient execution on low-resource devices. Handling text, image, video, and audio input, available in E2B and E4B parameter sizes
   * [Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)\
     Well-suited for reasoning, agentic workflows, coding, and multimodal understanding, available in E2B, E4B, 12B, 26B A4B, and 31B parameter sizes.
+    * [Fine-tune Gemma 4 with Halo and SGLang](docs/core/halo_gemma4_sft_grpo_sglang.ipynb)\
+      Fine-tune Gemma 4 26B-A4B with Halo, then generate environmental GRPO rollouts with SGLang.
 * Gemma variants
   * [CodeGemma](https://ai.google.dev/gemma/docs/codegemma)\
     Fine-tuned for a variety of coding tasks
