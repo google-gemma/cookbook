@@ -1,0 +1,20 @@
+FROM gemma3:latest
+
+# Gemma 4 requires a very strict template for Tool Calling / Web Search to function.
+# Default Ollama templates may strip the <|tool_call|> and <|tool_response|> tokens,
+# which causes Gemma to "see nothing" when the search results are returned.
+
+TEMPLATE """{{ if .System }}<start_of_turn>system
+{{ .System }}<end_of_turn>
+{{ end }}{{ if .Prompt }}<start_of_turn>user
+{{ if .Tools }}You have access to the following functions:
+
+{{ range .Tools }}{{ .Function }}
+{{ end }}
+
+Use the `<|tool_call|>` and `<|tool_response|>` tags for web search operations.{{ end }}
+{{ .Prompt }}<end_of_turn>
+{{ end }}<start_of_turn>model
+{{ if .Response }}{{ .Response }}<end_of_turn>{{ end }}"""
+
+PARAMETER temperature 0.1
