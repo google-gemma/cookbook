@@ -65,15 +65,18 @@ You can find the Gemma models on the Hugging Face Hub, Kaggle, Google Cloud Vert
 * [Gemma on Google Cloud](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/open-models) : GCP open models has additional notebooks for using Gemma
 
 ## Get help
-Ask a Gemma cookbook-related question on the [developer forum](https://discuss.ai.google.dev/c/gemma/10), or open an [issue](https://github.com/google-gemini/gemma-cookbook/issues) on GitHub.
+
+Ask a Gemma cookbook-related question on the [developer forum](https://discuss.ai.google.dev/c/gemma/10), or open an [issue](https://github.com/google-gemma/cookbook/issues) on GitHub.
 
 ## Wish list
-If you want to see additional cookbooks implemented for specific features/integrations, please open a new issue with [“Feature Request” template](https://github.com/google-gemini/gemma-cookbook/issues/new?template=feature_request.yml).
 
-If you want to make contributions to the Gemma Cookbook project, you are welcome to pick any idea in the [“Wish List”](https://github.com/google-gemini/gemma-cookbook/labels/wishlist) and implement it.
+If you want to see additional cookbooks implemented for specific features/integrations, please open a new issue in the [Gemma Cookbook issue tracker](https://github.com/google-gemma/cookbook/issues).
+
+If you want to make contributions to the Gemma Cookbook project, you are welcome to pick any idea in the [“Wish List”](https://github.com/google-gemma/cookbook/labels/wishlist) and implement it.
 
 ## Contributing
-Contributions are always welcome. Please read [contributing](https://github.com/google-gemini/gemma-cookbook/blob/main/CONTRIBUTING.md) before implementation.
+
+Contributions are always welcome. Please read [contributing](https://github.com/google-gemma/cookbook/blob/main/CONTRIBUTING.md) before implementation.
 
 Thank you for developing with Gemma! We’re excited to see what you create.
 
