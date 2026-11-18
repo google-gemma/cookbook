@@ -1,0 +1,12 @@
+Antigravity Hybrid Orchestrator
+Copyright 2026 Google LLC
+
+This product includes software developed at Google LLC.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This is a demonstration project accompanying a blog post. It is not an
+officially supported Google product.
+
+Third-party dependencies are listed in requirements.txt and retain their own
+licences. Gemma model weights are distributed separately by the LiteRT
+community on Hugging Face and are governed by the Gemma Terms of Use.
