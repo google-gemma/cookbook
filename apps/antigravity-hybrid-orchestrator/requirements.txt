@@ -1,0 +1,9 @@
+# Pinned to a tested range. runtime_compat.py reaches into SDK internals
+# (google.antigravity.connections.local.litert_server), so a major/minor bump
+# can change behaviour. Verified end-to-end against:
+#   google-antigravity 0.1.16 and 0.1.17
+#   litert-lm          0.17.0 and 0.17.1
+google-antigravity>=0.1.16,<0.2
+litert-lm>=0.17.0,<0.18
+rich>=13.0.0
+certifi>=2024.0.0
