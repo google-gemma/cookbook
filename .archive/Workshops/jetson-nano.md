@@ -85,6 +85,6 @@ and cache the model on first use).
 For a video demonstration of what's possible, see [Demo: Gemma 2 2B on a Jetson Orin Nano
 ](https://www.youtube.com/watch?v=Kd7VJ-TKb8I&list=PLOU2XLYxmsIKOyXflnuPK-qe32hZLc2HB&index=12).
 
-For more information on using Ollama, see the [Ollama documentation](https://ai.google.dev/gemma/docs/integrations/ollama) 
+For more information on using Ollama, see the [Ollama documentation](https://gemma.ai/deployment/ollama/) 
 on ai.google.dev.
 

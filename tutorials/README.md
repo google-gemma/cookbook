@@ -10,7 +10,7 @@ Notebooks for Gemma models and variants.
 | [EmbeddingGemma2_LiteRT_RAG.ipynb](EmbeddingGemma2_LiteRT_RAG.ipynb) | Build an on-device RAG pipeline with EmbeddingGemma 2, Qdrant Edge, and Gemma 4 using LiteRT-LM. |
 | [Image_Segmentation.ipynb](Image_Segmentation.ipynb) | Image Segmentation Task with Gemma 4 |
 | [On_Device_AI.ipynb](On_Device_AI.ipynb) | Build a fully on-device RAG pipeline using Lite-RT and Qdrant Edge |
-| [RAG_with_EmbeddingGemma.ipynb](RAG_with_EmbeddingGemma.ipynb) | Build simple RAG with [EmbeddingGemma](https://ai.google.dev/gemma/docs/embeddinggemma) |
+| [RAG_with_EmbeddingGemma.ipynb](RAG_with_EmbeddingGemma.ipynb) | Build simple RAG with [EmbeddingGemma](https://gemma.ai/models/embeddinggemma/) |
 | [Translator_of_Old_Korean_Literature.ipynb](Translator_of_Old_Korean_Literature.ipynb) | Fine-tuning Gemma to translate old Korean literature |
 
 ## Inference Capabilities

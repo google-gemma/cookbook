@@ -78,7 +78,7 @@ This folder is organized into several categories, each focusing on a speicific a
 | [[Gemma_2]Using_with_Firebase_Genkit_and_Ollama.ipynb]([Gemma_2]Using_with_Firebase_Genkit_and_Ollama.ipynb)                     | Example to demonstrate using Gemma with [Firebase Genkit](https://firebase.google.com/docs/genkit/) and [Ollama](https://www.ollama.com/)                                               |
 | [[Gemma_2]Using_with_LangChain.ipynb]([Gemma_2]Using_with_LangChain.ipynb)                                           | Examples to demonstrate using Gemma with [LangChain](https://www.langchain.com/).                                                                                                       |
 | [[Gemma_3]Local_Agentic_RAG.ipynb]([Gemma_3]Local_Agentic_RAG.ipynb)                                           | Build local Agentic RAG without any external APIs using [FastEmbed](https://github.com/qdrant/fastembed), [Ollama- Gemma3](https://ollama.com/models), and [Qdrant Vector database](https://cloud.qdrant.io)                                                                                                      |
-| [[Gemma_3]RAG_with_EmbeddingGemma.ipynb]([Gemma_3]RAG_with_EmbeddingGemma.ipynb)                               | Build simple RAG with [EmbeddingGemma](https://ai.google.dev/gemma/docs/embeddinggemma) |
+| [[Gemma_3]RAG_with_EmbeddingGemma.ipynb]([Gemma_3]RAG_with_EmbeddingGemma.ipynb)                               | Build simple RAG with [EmbeddingGemma](https://gemma.ai/models/embeddinggemma/) |
 
 
 ## Finetuning
