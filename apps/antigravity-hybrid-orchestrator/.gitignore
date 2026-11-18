@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv
+.venv/
+.DS_Store
+out/
+models/
+recording/
+tests/
+scratch/
+*.tape
+secrets.local.sh*
+sandbox/auth.py
+sandbox/billing.py
+sandbox/database.py
