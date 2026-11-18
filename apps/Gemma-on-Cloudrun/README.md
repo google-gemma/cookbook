@@ -48,7 +48,7 @@ gcloud run deploy {SERVICE_NAME} \
 Explanation of Variables:
 * `SERVICE_NAME`: The unique name for your Cloud Run service.
 * `IMAGE`: The Docker image to deploy. This can be one of our [pre-built images](#pre-built-docker-images) or an image you built yourself from this repository
-* `YOUR_API_KEY`: **Crucial for authentication**. Set this to a strong, unique API key string of your choice. This key will be required to access your service. See the [Authentication](#authentication) section below for more details. If you're deploying from AI Studio, this is generated on your behalf. Note that this should *not* be an API key re-used from another service.
+* `YOUR_API_KEY`: **Crucial for authentication**. Set this to a strong, unique API key string of your choice. This key will be required to access your service. See the [Authentication](#authentication) section below for more details. If you're deploying from AI Studio, this is generated on your behalf. Note that this should *not* be an API key reused from another service.
 * `REGION`: The Google Cloud region where your Cloud Run service will be deployed (e.g., us-central1). Ensure this region supports the specified GPU type. See [GPU support for Cloud Run services](https://cloud.google.com/run/docs/configuring/services/gpu) for more details.  If you're deploying from AI Studio, this defaults to europe-west1.
 * For other flags and optimizing setting, see [Run LLM inference on Cloud Run GPUs with Gemma 3 and Ollama](https://cloud.google.com/run/docs/tutorials/gpu-gemma-with-ollama#build-and-deploy) for more details.
 
