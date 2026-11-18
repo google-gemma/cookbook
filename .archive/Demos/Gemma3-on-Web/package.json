@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@huggingface/transformers": "^3.7.1",
+    "@huggingface/transformers": "^4.3.2",
     "dompurify": "^3.4.17",
     "marked": "^15.0.4",
     "react": "19.1.1",
@@ -29,6 +29,6 @@
     "globals": "^15.12.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.1.17",
-    "vite": "^6.4.2"
+    "vite": "^6.4.6"
   }
 }
