@@ -77,3 +77,4 @@ jobs:
             --exclude_lint=google::second_person \
             "${changed_notebooks[@]}"
         fi
+
