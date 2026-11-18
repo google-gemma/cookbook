@@ -1,6 +1,6 @@
 
 # Welcome to the Gemma Cookbook
-This is a collection of guides and examples for [Google Gemma](https://ai.google.dev/gemma/).
+This is a collection of guides and examples for [Google Gemma](https://gemma.ai/).
 
 > **Disclaimer:** Gemma is a family of developer-focused models built by Google DeepMind. This cookbook is a collection of guides and examples for Google Gemma. Please keep in mind that Gemma is an open model and can hallucinate as you build on examples in this cookbook.
 
@@ -16,38 +16,38 @@ This is a collection of guides and examples for [Google Gemma](https://ai.google
 Gemma is a family of lightweight, generative artificial intelligence (AI) open models, built from the same research and technology used to create the Gemini models. The Gemma model family includes:
 * Gemma\
   The core models of the Gemma family.
-  * [Gemma](https://ai.google.dev/gemma/docs/core/model_card)\
+  * [Gemma](https://gemma.ai/models/gemma-1/)\
     For a variety of text generation tasks and can be further tuned for specific use cases
-  * [Gemma 2](https://ai.google.dev/gemma/docs/core/model_card_2)\
+  * [Gemma 2](https://gemma.ai/models/gemma-2/)\
     Higher-performing and more efficient, available in 2B, 9B, 27B parameter sizes
-  * [Gemma 3](https://ai.google.dev/gemma/docs/core/model_card_3)\
+  * [Gemma 3](https://gemma.ai/models/gemma-3/)\
     Longer context window and handling text and image input, available in 1B, 4B, 12B, and 27B parameter sizes
-  * [Gemma 3n](https://ai.google.dev/gemma/docs/gemma-3n/model_card) \
+  * [Gemma 3n](https://gemma.ai/models/gemma-3n/model-card/) \
     Designed for efficient execution on low-resource devices. Handling text, image, video, and audio input, available in E2B and E4B parameter sizes
-  * [Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)\
+  * [Gemma 4](https://gemma.ai/models/gemma-4/model-card/)\
     Well-suited for reasoning, agentic workflows, coding, and multimodal understanding, available in E2B, E4B, 12B, 26B A4B, and 31B parameter sizes.
 * Gemma variants
-  * [CodeGemma](https://ai.google.dev/gemma/docs/codegemma)\
+  * [CodeGemma](https://gemma.ai/models/)\
     Fine-tuned for a variety of coding tasks
-  * [DataGemma](https://ai.google.dev/gemma/docs/datagemma)\
+  * [DataGemma](https://gemma.ai/models/datagemma/)\
     Fine-tuned for using Data Commons to address AI hallucinations
-  * [DiffusionGemma](https://ai.google.dev/gemma/docs/diffusiongemma)\
+  * [DiffusionGemma](https://gemma.ai/models/diffusiongemma/)\
     An experimental open model that explores text diffusion, an exceptionally fast approach to text generation.
-  * [FunctionGemma](https://ai.google.dev/gemma/docs/functiongemma)\
+  * [FunctionGemma](https://gemma.ai/models/functiongemma/)\
     Fine-tuned on Gemma 3 270M IT checkpoint for function calling
   * [MedGemma](https://developers.google.com/health-ai-developer-foundations/medgemma)
     The MedGemma collection contains Google's most capable open models for medical text and image comprehension, built on Gemma 3. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma comes in two variants: a 4B multimodal version and a 27B text-only version.
-  * [PaliGemma](https://ai.google.dev/gemma/docs/paligemma/model-card)\
+  * [PaliGemma](https://gemma.ai/models/paligemma/model-card-v1/)\
     Vision Language Model\
     For a deeper analysis of images and provide useful insights
-  * [PaliGemma 2](https://ai.google.dev/gemma/docs/paligemma/model-card-2)\
+  * [PaliGemma 2](https://gemma.ai/models/paligemma/model-card-v2/)\
     VLM which incorporates the capabilities of the Gemma 2 models
-  * [RecurrentGemma](https://ai.google.dev/gemma/docs/recurrentgemma)\
+  * [RecurrentGemma](https://gemma.ai/models/recurrentgemma/)\
     Based on [Griffin](https://arxiv.org/abs/2402.19427) architecture\
     For a variety of text generation tasks
-  * [ShieldGemma](https://ai.google.dev/gemma/docs/shieldgemma/model_card)\
+  * [ShieldGemma](https://gemma.ai/models/shieldgemma/model-card-v1/)\
     Fine-tuned for evaluating the safety of text prompt input and text output responses against a set of defined safety policies
-  * [ShieldGemma 2](https://ai.google.dev/gemma/docs/shieldgemma/model_card_2)\
+  * [ShieldGemma 2](https://gemma.ai/models/shieldgemma/model-card-v2/)\
     Fine-tuned on Gemma 3 4B IT checkpoint for image safety classification
   * [T5Gemma](https://deepmind.google/models/gemma/t5gemma)\
     A collection of encoder-decoder models that provide a strong quality-inference efficiency tradeoff
