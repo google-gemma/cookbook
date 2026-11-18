@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@huggingface/transformers": "^3.7.1",
-    "dompurify": "^3.4.0",
+    "dompurify": "^3.4.13",
     "marked": "^15.0.4",
     "react": "19.1.1",
     "react-dom": "19.1.1"
